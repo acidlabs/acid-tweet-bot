@@ -1,3 +1,2 @@
 db/db.sqlite3
-Gemfile.lock
 config/auth.yml
