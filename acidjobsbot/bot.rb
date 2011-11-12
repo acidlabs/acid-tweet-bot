@@ -12,7 +12,6 @@ module AcidJobsBot
         config.oauth_token = @@config.oauth_token
         config.oauth_token_secret = @@config.oauth_token_secret
       end
-      Twitter.update('Hello Mr. TweetBoto #acidlabs')
     end
     
     def tweet_offer(offer)
