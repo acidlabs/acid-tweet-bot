@@ -7,7 +7,7 @@ consumer_secret:    "YOUR_CONSUMER_SECRET"
 oauth_token:        "YOUR_OAUTH_TOKEN"
 oauth_token_secret: "YOUR_OAUTH_TOKEN_SECRET"
 
-- upload 
+- upload (set rails_env?)
 
 - rake db:migrate
 
