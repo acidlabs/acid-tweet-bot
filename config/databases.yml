@@ -1,6 +1,6 @@
 common: &common
   adapter: sqlite3
-  database: <%= APPNAME %>
+  database: db/db.sqlite3
 
 test:
   <<: *common
