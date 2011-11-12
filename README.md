@@ -1,6 +1,6 @@
 - Create an app
 
-- Configure your auth.yml file
+- create a file config/auth.yml
 
  consumer_key:       "YOUR_CONSUMER_KEY"
  consumer_secret:    "YOUR_CONSUMER_SECRET"
