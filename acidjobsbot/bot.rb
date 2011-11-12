@@ -5,8 +5,7 @@ module AcidJobsBot
     def initialize
       @@config ||= AcidJobsBot::Config.new
       
-      ActiveRecord::Base.establish_connection(YAML.load(File.read(File.join(File.dirname(__FILE__),'..','config','databases.yml')))[ENV['ENV'] ? ENV['ENV'] : 'development'])
-      
+      ActiveRecord::Base.establish_connection(YAML.load(File.read(File.join(File.dirname(__FILE__),'..','config','database.yml')))[ENV['ENV'] ? ENV['ENV'] : 'development'])      
       
       Twitter.configure do |config|
         config.consumer_key = @@config.consumer_key
