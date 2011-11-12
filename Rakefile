@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require File.join(File.dirname(__FILE__),"acidjobsbot")
 
 namespace :db do
   desc "Migrate the database through scripts in db/migrate."
@@ -8,3 +9,11 @@ namespace :db do
     ActiveRecord::Migrator.migrate("db/migrate/")
   end
 end
+
+desc "Tweet a random status fom database."
+task :cron do
+  acid_bot = AcidJobsBot::Bot.new
+  acid_bot.run
+end
+
+
