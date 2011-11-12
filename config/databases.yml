@@ -1,15 +1,11 @@
-common: &common
-  adapter: sqlite3
-  database: db/db.sqlite3
-
 test:
-  <<: *common
+    adapter: sqlite3
+    database: db/db.sqlite3
 
 development:
-  <<: *common
+    adapter: sqlite3
+    database: db/db.sqlite3
 
 production:
-  <<: *common
-  adapter: postgres
-  pool: 5
-  timeout: 5000
+  adapter: postgresql
+  
