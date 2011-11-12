@@ -4,6 +4,17 @@ module AcidJobsBot
     
     def initialize
       @@config ||= AcidJobsBot::Config.new
+      Twitter.configure do |config|
+        config.consumer_key = @@config.consumer_key
+        config.consumer_secret = @@config.consumer_secret
+        config.oauth_token = @@config.oauth_token
+        config.oauth_token_secret = @@config.oauth_token_secret
+      end
+      Twitter.update('Hello Mr. TweetBoto #acidlabs')
+    end
+    
+    def tweet_offer(offer)
+      Twitter.update(offer)
     end
     
     def run
