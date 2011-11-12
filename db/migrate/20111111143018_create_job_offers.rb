@@ -7,6 +7,6 @@ class CreateJobOffers < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :stored_files
+    drop_table :job_offers
   end
 end
