@@ -7,6 +7,10 @@ consumer_secret:    "YOUR_CONSUMER_SECRET"
 oauth_token:        "YOUR_OAUTH_TOKEN"
 oauth_token_secret: "YOUR_OAUTH_TOKEN_SECRET"
 
-- upload and add some offers with irb or heroku console =)
+- upload 
+
+- rake db:migrate
+
+- add some offers with irb or heroku console =)
 
 better documentation will be available "soon"
