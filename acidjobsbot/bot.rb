@@ -12,11 +12,6 @@ module AcidJobsBot
     end
 
   end
-  
-  bot = AcidTweetBot.new
-  
-  bot.run
-
 end
 
 
