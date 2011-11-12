@@ -1,0 +1,48 @@
+h1. Acid Jobs Bot
+
+This is a twitter bot that tweets job offers periodically and is deployed now in heroku.
+
+h1. How-To
+
+h2. Create an app in Twitter
+
+Go to http://twitter.com/apps and create your app.
+
+Be sure to generate your OAUTH token and respective secret.
+
+h2. Create auth.yml file to your config/ folder
+
+Add the following to the auth.yml file
+
+<pre>
+ consumer_key:       "YOUR_CONSUMER_KEY"
+ consumer_secret:    "YOUR_CONSUMER_SECRET"
+ oauth_token:        "YOUR_OAUTH_TOKEN"
+ oauth_token_secret: "YOUR_OAUTH_TOKEN_SECRET"
+</pre>
+  
+h2. (Optional) Deploy to Heroku and set ENV config variables to production
+
+<pre> 
+  > heroku config:add ENV=production RAILS_ENV=production RACK_ENV=production
+</pre> 
+
+h2. Migrate your database
+
+<pre>
+ > rake db:migrate
+</pre>
+
+h2. Add some offers with irb or heroku console =)
+
+Start playing and posting job offers on Twitter!
+ 
+h2. TODO
+
+* Config testing
+* Functional testing
+* Better documentation 
+
+h2. Credits 
+
+Ignacio Mella & Gert Findel
